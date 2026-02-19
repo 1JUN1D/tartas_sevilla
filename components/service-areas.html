@@ -1,0 +1,285 @@
+<style>
+.service-areas-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+}
+
+.service-areas-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-areas-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-areas-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #0D0D0D;
+    margin-bottom: 1rem;
+}
+
+.service-areas-header p {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.city-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F2B872;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.localities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.locality-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.locality-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(242, 184, 114, 0.15);
+}
+
+.locality-icon {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #F2B872 0%, #A66F5B 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.locality-info h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0D0D0D;
+    margin-bottom: 0.25rem;
+}
+
+.locality-info p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.coverage-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #F2B872 0%, #F2C4C4 100%);
+    color: #0D0D0D;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgba(242, 184, 114, 0.3);
+}
+
+@media (max-width: 768px) {
+    .service-areas-header h2 {
+        font-size: 2.25rem;
+    }
+    
+    .localities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<section id="zonas" class="service-areas-section">
+    <div class="service-areas-container">
+        <div class="service-areas-header">
+            <h2>Zonas de Servicio</h2>
+            <p>Llevamos nuestras tartas artesanales a toda Sevilla y sus barrios. Entrega garantizada en toda la ciudad</p>
+        </div>
+        
+        <div class="city-name">📍 Sevilla y sus Barrios</div>
+        
+        <div class="localities-grid">
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Sevilla Centro</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Triana</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Los Remedios</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Nervión</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Macarena</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>San Pablo - Santa Justa</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Bellavista - La Palmera</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Cerro - Amate</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Sur</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Casco Antiguo</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Este - Alcosa - Torreblanca</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Valdezorras</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Pino Montano</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Rochelambert</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>El Porvenir</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Heliópolis</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Bami</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Torreblanca</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Polígono Sur</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+            
+            <div class="locality-item">
+                <div class="locality-icon">🎂</div>
+                <div class="locality-info">
+                    <h3>Castilleja de la Cuesta</h3>
+                    <p>Entrega rápida</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <span class="coverage-badge">✓ Cobertura en toda Sevilla y alrededores</span>
+        </div>
+    </div>
+</section>

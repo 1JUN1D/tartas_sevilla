@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de tartas artesanales de Miami Cakes en Sevilla. Tartas personalizadas, de comunión, de boda, dulces y mucho más. Sin conservantes, elaboradas a mano.">
+    <meta name="keywords" content="catálogo tartas Sevilla, tartas personalizadas Sevilla, tartas artesanales Sevilla, Miami Cakes">
+    <title>Catálogo de Tartas Artesanales – Miami Cakes Sevilla</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Catálogo de Tartas – Miami Cakes Sevilla">
+    <meta property="og:description" content="Explora nuestra colección de tartas artesanales y dulces en Sevilla. Cada pieza elaborada desde cero, sin conservantes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miamicakes.dondeseria.com/catalogo.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.webp">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://miamicakes.dondeseria.com/catalogo.html">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Catálogo de Tartas Artesanales Miami Cakes Sevilla",
+      "description": "Colección completa de tartas artesanales, dulces y repostería personalizada elaborada en Sevilla.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Miami Cakes",
+        "telephone": "+34624454786",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sevilla",
+          "addressCountry": "ES"
+        }
+      }
+    }
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7752LB6QDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7752LB6QDP');
+</script>
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1>Nuestro Catálogo</h1>
+            <p>Tartas artesanales elaboradas desde cero en Sevilla, sin conservantes, con ingredientes naturales y diseñadas especialmente para cada ocasión</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="filters-container">
+                <span class="filter-label">Filtrar por:</span>
+                <button class="filter-btn active"       onclick="filterProducts('all')">Todos</button>
+                <button class="filter-btn"              onclick="filterProducts('tartas-personalizadas')">Tartas Personalizadas</button>
+                <button class="filter-btn"              onclick="filterProducts('bodas')">Bodas</button>
+                <button class="filter-btn"              onclick="filterProducts('comuniones')">Comuniones</button>
+                <button class="filter-btn"              onclick="filterProducts('clasicas')">Tartas Clásicas</button>
+                <button class="filter-btn"              onclick="filterProducts('dulces')">Dulces y Extras</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="results-counter" id="resultsCounter"></div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se cargan con JavaScript -->
+            </div>
+            <div class="empty-state" id="emptyState">
+                <h3>No se encontraron productos en esta categoría</h3>
+                <p>Prueba con otro filtro o <a href="https://wa.me/34624454786" target="_blank">consúltanos por WhatsApp</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">×</button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxPrice"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()" aria-label="Volver arriba">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- Service Areas -->
+    <div id="service-areas-container"></div>
+
+    <!-- Contact Info -->
+    <div id="contact-info-container"></div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button-container"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/catalog-data.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
